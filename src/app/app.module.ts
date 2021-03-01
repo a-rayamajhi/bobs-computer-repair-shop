@@ -1,7 +1,7 @@
 /**
  * Title: app.module.ts
  * Author: Professor Krasso
- * Date: 5 Feb 2021
+ * Date: 1 Mar 2021
  * Modified By:  Anil Rayamajhi
  * Description: App Module
  */
@@ -11,8 +11,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 
 // Angular Material
@@ -31,14 +29,16 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './home/home.component';
 import { ServiceListComponent } from './service-list/service-list.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { InvoiceDialogComponent } from './invoice-dialog/invoice-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    ContactComponent,
     HomeComponent,
     ServiceListComponent,
+    NotFoundComponent,
+    InvoiceDialogComponent,
   ],
   imports: [
     BrowserModule,

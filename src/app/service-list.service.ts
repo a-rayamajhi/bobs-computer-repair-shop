@@ -1,7 +1,7 @@
 /**
  * Title: service-list.service.ts
  * Author: Professor Krasso
- * Date: 28 Feb 2021
+ * Date: 1 Mar 2021
  * Modified By:  Anil Rayamajhi
  * Description: Bob's Computers Service List Service
  */
@@ -13,6 +13,7 @@ import { IService } from './service.interface';
   providedIn: 'root',
 })
 export class ServiceListService {
+  // services of Array type IService
   services: Array<IService>;
 
   constructor() {
@@ -55,7 +56,18 @@ export class ServiceListService {
     ];
   }
 
+  /**
+   * return services list
+   */
   getServices() {
+    return this.services;
+  }
+
+  /**
+   * reset service object array with checked value reset to false
+   */
+  reset() {
+    this.services.forEach((el) => (el.checked = false));
     return this.services;
   }
 }

@@ -1,4 +1,4 @@
-# InNOutBooks
+# BOB's Computers
 
 GHPage: https://a-rayamajhi.github.io/in-n-out-books/
 

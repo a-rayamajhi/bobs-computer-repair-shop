@@ -1,7 +1,13 @@
+// service list component design
 .service-tile {
-  padding: 5rem;
+  padding: 5rem 5rem 2rem;
 }
 mat-checkbox {
   padding: 0.5rem;
   color: #212121;
+}
+
+.submit-button {
+  float: right;
+  margin: 0 5rem 5rem 0;
 }

@@ -1,9 +1,10 @@
 /**
  * Title: app.component.ts
  * Author: Professor Krasso
- * Date: 28 Feb 2021
+ * Date: 1 Mar 2021
  * Modified By:  Anil Rayamajhi
  * Description: App Component
+ *  load service list from Service List Angular Service for footer
  */
 
 import { Component } from '@angular/core';
@@ -16,11 +17,11 @@ import { ServiceListService } from './service-list.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  assignment: string;
+  appName: string;
   services: Array<IService>;
 
   constructor(private serviceListService: ServiceListService) {
-    this.assignment = "BOB's Computers";
+    this.appName = "BOB's Computers";
     this.services = serviceListService.getServices();
   }
 }
