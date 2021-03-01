@@ -1,0 +1,66 @@
+<div class="app-title">
+  <span routerLink="/">{{ assignment }}</span>
+</div>
+
+<!-- Toolbar directive -->
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div>
+      <!-- App top navbar -->
+      <div fxLayout="row wrap">
+        <button mat-button routerLink="/">HOME</button>
+        <button mat-button routerLink="/service-list">SERVICES</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <div class="main-container">
+      <mat-card-content>
+        <!-- RouterOutlet Directive -->
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </div>
+  </div>
+</div>
+
+<div fxLayout="row wrap" class="footer">
+  <div fxFlex="100%" fxFlex.gt-sm="50%">
+    <div class="footer-tile">
+      <div class="about-title">{{ assignment }} Repair Shop</div>
+      <div class="about-content">
+        Welcome to the quickest and easiest computer repair service in Los
+        Angeles. Our experienced professionals will diagnose your problems free
+        of charge. Just bring it in to our shop location. We are located @ 4315
+        Overland Ave, Culver City, CA 90230 with dedicated parking. We have been
+        servicing this community for over 17 yrs. Providing the best and most
+        cost effective solution to all your computer and networking needs. With
+        Quick N Easy Computer Repair services have become personal again.
+      </div>
+    </div>
+  </div>
+  <div fxFlex="100%" fxFlex.gt-sm="25%">
+    <div class="footer-tile">
+      <div class="about-title padding-left-2">SERVICES</div>
+      <div class="about-content">
+        <mat-icon color="secondary">chevron_right</mat-icon>
+      </div>
+    </div>
+  </div>
+  <div fxFlex="100%" fxFlex.gt-sm="25%">
+    <div class="footer-tile">
+      <div class="about-title">CONTACT US</div>
+      <div class="about-content">
+        Welcome to the quickest and easiest computer repair service in Los
+        Angeles. Our experienced professionals will diagnose your problems free
+        of charge. Just bring it in to our shop location. We are located @ 4315
+        Overland Ave, Culver City, CA 90230 with dedicated parking. We have been
+        servicing this community for over 17 yrs. Providing the best and most
+        cost effective solution to all your computer and networking needs. With
+        Quick N Easy Computer Repair services have become personal again.
+      </div>
+    </div>
+  </div>
+</div>

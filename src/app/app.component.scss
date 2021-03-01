@@ -1,0 +1,42 @@
+// App Logo
+.app-title {
+  display: flex;
+  background-color: #fff;
+  height: 100px;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  color: #212121;
+  font-weight: 300;
+  text-shadow: 0px 0px 21px #262626;
+
+  span {
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  background-color: #212121;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.about-title {
+  font-size: 17px;
+}
+
+.about-content {
+  margin-top: 1rem;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.footer-tile {
+  padding: 2rem;
+}
+
+.padding-left-2 {
+  padding-left: 2rem;
+}
