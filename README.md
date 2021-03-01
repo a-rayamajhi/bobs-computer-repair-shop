@@ -1,6 +1,6 @@
 # BOB's Computers
 
-GHPage: https://a-rayamajhi.github.io/in-n-out-books/
+GHPage: https://a-rayamajhi.github.io/bobs-computer-repair-shop/
 
 Portfolio: https://a-rayamajhi.github.io/
 <br />
