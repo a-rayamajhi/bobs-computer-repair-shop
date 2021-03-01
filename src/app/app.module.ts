@@ -13,10 +13,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { BookListComponent } from './book-list/book-list.component';
-import { BookDetailsDialogComponent } from './book-details-dialog/book-details-dialog.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 
 // Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -28,12 +25,10 @@ import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 // Flex Layout
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { WishlistComponent } from './wishlist/wishlist.component';
-import { WishlistCreateComponent } from './wishlist-create/wishlist-create.component';
 import { HomeComponent } from './home/home.component';
 import { ServiceListComponent } from './service-list/service-list.component';
 
@@ -42,10 +37,6 @@ import { ServiceListComponent } from './service-list/service-list.component';
     AppComponent,
     AboutComponent,
     ContactComponent,
-    BookListComponent,
-    BookDetailsDialogComponent,
-    WishlistComponent,
-    WishlistCreateComponent,
     HomeComponent,
     ServiceListComponent,
   ],
@@ -64,8 +55,7 @@ import { ServiceListComponent } from './service-list/service-list.component';
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
-    HttpClientModule,
-    MatProgressSpinnerModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

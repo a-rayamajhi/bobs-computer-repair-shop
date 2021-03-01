@@ -1,1 +1,22 @@
-<p>service-list works!</p>
+<div fxLayout="row wrap" class="footer">
+  <div fxFlex="100%" fxFlex.gt-sm="50%" class="service-tile">
+    <h3>Services</h3>
+
+    <div *ngFor="let service of services">
+      <mat-checkbox
+        name=""
+        id=""
+        totalValue=""
+        [(ngModel)]="service.checked"
+        (change)="selectService()"
+      >
+        {{ service.name }} - ${{ service.price }}
+      </mat-checkbox>
+    </div>
+  </div>
+  <div fxFlex="100%" fxFlex.gt-sm="50%" class="service-tile">
+    <h3>Services</h3>
+
+    TETE
+  </div>
+</div>

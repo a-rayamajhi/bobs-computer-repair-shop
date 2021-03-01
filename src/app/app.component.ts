@@ -7,6 +7,8 @@
  */
 
 import { Component } from '@angular/core';
+import { IService } from './service.interface';
+import { ServiceListService } from './service-list.service';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +17,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   assignment: string;
+  services: Array<IService>;
 
-  constructor() {
+  constructor(private serviceListService: ServiceListService) {
     this.assignment = "BOB's Computers";
+    this.services = serviceListService.getServices();
   }
 }

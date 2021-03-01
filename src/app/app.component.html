@@ -27,7 +27,7 @@
 </div>
 
 <div fxLayout="row wrap" class="footer">
-  <div fxFlex="100%" fxFlex.gt-sm="50%">
+  <div fxFlex="100%" fxFlex.gt-sm="55%">
     <div class="footer-tile">
       <div class="about-title">{{ assignment }} Repair Shop</div>
       <div class="about-content">
@@ -41,25 +41,29 @@
       </div>
     </div>
   </div>
-  <div fxFlex="100%" fxFlex.gt-sm="25%">
+  <div fxFlex="100%" fxFlex.gt-sm="20%">
     <div class="footer-tile">
       <div class="about-title padding-left-2">SERVICES</div>
       <div class="about-content">
-        <mat-icon color="secondary">chevron_right</mat-icon>
+        <div *ngFor="let service of services" class="content-wrapper">
+          <mat-icon color="secondary">chevron_right</mat-icon>
+          <div>{{ service.name }}</div>
+        </div>
       </div>
     </div>
   </div>
   <div fxFlex="100%" fxFlex.gt-sm="25%">
     <div class="footer-tile">
-      <div class="about-title">CONTACT US</div>
+      <div class="about-title padding-left-2">CONTACT US</div>
       <div class="about-content">
-        Welcome to the quickest and easiest computer repair service in Los
-        Angeles. Our experienced professionals will diagnose your problems free
-        of charge. Just bring it in to our shop location. We are located @ 4315
-        Overland Ave, Culver City, CA 90230 with dedicated parking. We have been
-        servicing this community for over 17 yrs. Providing the best and most
-        cost effective solution to all your computer and networking needs. With
-        Quick N Easy Computer Repair services have become personal again.
+        <div class="content-wrapper">
+          <mat-icon color="secondary">chevron_right</mat-icon>
+          <div>support@bobcomputers.com</div>
+        </div>
+        <div class="content-wrapper">
+          <mat-icon color="secondary">chevron_right</mat-icon>
+          <div>(310) 666 1111</div>
+        </div>
       </div>
     </div>
   </div>

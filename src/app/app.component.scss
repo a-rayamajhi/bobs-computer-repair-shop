@@ -29,8 +29,13 @@
 
 .about-content {
   margin-top: 1rem;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
+}
+
+mat-icon {
+  font-size: 14px;
+  height: unset;
 }
 
 .footer-tile {
@@ -39,4 +44,10 @@
 
 .padding-left-2 {
   padding-left: 2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 1.7rem;
 }
