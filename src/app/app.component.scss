@@ -1,4 +1,5 @@
 // App Logo
+// Flexbox to align logo center with drop shadow
 .app-title {
   display: flex;
   background-color: #fff;
@@ -16,6 +17,7 @@
   }
 }
 
+// footer theme
 .footer {
   background-color: #212121;
   color: #fff;
@@ -46,6 +48,7 @@ mat-icon {
   padding-left: 2rem;
 }
 
+// service and contact us content wrapper
 .content-wrapper {
   display: flex;
   align-items: center;

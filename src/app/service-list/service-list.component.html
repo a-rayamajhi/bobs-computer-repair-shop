@@ -2,21 +2,76 @@
   <div fxFlex="100%" fxFlex.gt-sm="50%" class="service-tile">
     <h3>Services</h3>
 
+    <!-- Service Checkboxes -->
     <div *ngFor="let service of services">
-      <mat-checkbox
-        name=""
-        id=""
-        totalValue=""
-        [(ngModel)]="service.checked"
-        (change)="selectService()"
-      >
-        {{ service.name }} - ${{ service.price }}
+      <mat-checkbox name="" id="" totalValue="" [(ngModel)]="service.checked">
+        {{ service.name }} - ${{ service.price.toFixed(2) }}
       </mat-checkbox>
     </div>
   </div>
   <div fxFlex="100%" fxFlex.gt-sm="50%" class="service-tile">
-    <h3>Services</h3>
+    <!-- Additional Parts and Hour input fields -->
+    <h3>Standard Fees</h3>
+    <br />
+    <div>
+      <mat-form-field fxFlex appearance="fill">
+        <mat-label>Part(s)</mat-label>
+        <mat-icon matPrefix>attach_money</mat-icon>
 
-    TETE
+        <input
+          type="text"
+          name="txtPart"
+          id="txtPart"
+          matInput
+          type="number"
+          [(ngModel)]="part"
+        />
+        <button
+          mat-button
+          *ngIf="part"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="part = ''"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field fxFlex appearance="fill">
+        <mat-label>Hour(s)</mat-label>
+        <mat-icon matPrefix>access_time</mat-icon>
+        <input
+          type="text"
+          name="txtHour"
+          id="txtHour"
+          matInput
+          type="number"
+          [(ngModel)]="hour"
+        />
+        <button
+          mat-button
+          *ngIf="hour"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="hour = ''"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <mat-hint align="start"
+      ><strong><em>Standard fee of $50 per hour</em></strong>
+    </mat-hint>
   </div>
+</div>
+<div class="submit-button">
+  <!-- Reset all checkboxes and input fields -->
+  <button mat-button color="warn" (click)="reset()">Reset</button>
+  <!-- Lauch Modal with Calculated Results -->
+  <button mat-raised-button color="accent" (click)="calculateResults()">
+    Calculate
+  </button>
 </div>

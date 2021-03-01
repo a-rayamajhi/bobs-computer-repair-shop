@@ -1,5 +1,5 @@
 <div class="app-title">
-  <span routerLink="/">{{ assignment }}</span>
+  <span routerLink="/">{{ appName }}</span>
 </div>
 
 <!-- Toolbar directive -->
@@ -15,6 +15,7 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
+<!-- Main -->
 <div fxLayout="row wrap">
   <div fxFlex>
     <div class="main-container">
@@ -26,18 +27,19 @@
   </div>
 </div>
 
+<!-- Footer -->
 <div fxLayout="row wrap" class="footer">
   <div fxFlex="100%" fxFlex.gt-sm="55%">
     <div class="footer-tile">
-      <div class="about-title">{{ assignment }} Repair Shop</div>
+      <div class="about-title">{{ appName }} Repair Shop</div>
       <div class="about-content">
         Welcome to the quickest and easiest computer repair service in Los
         Angeles. Our experienced professionals will diagnose your problems free
-        of charge. Just bring it in to our shop location. We are located @ 4315
-        Overland Ave, Culver City, CA 90230 with dedicated parking. We have been
-        servicing this community for over 17 yrs. Providing the best and most
-        cost effective solution to all your computer and networking needs. With
-        Quick N Easy Computer Repair services have become personal again.
+        of charge. Just bring it in to our shop location. We are located @ 1000
+        Galvin Rd S, Bellevue, NE 68005 90230 with dedicated parking. We have
+        been servicing this community for over 17 yrs. Providing the best and
+        most cost effective solution to all your computer and networking needs.
+        With Quick N Easy Computer Repair services have become personal again.
       </div>
     </div>
   </div>
@@ -62,7 +64,14 @@
         </div>
         <div class="content-wrapper">
           <mat-icon color="secondary">chevron_right</mat-icon>
-          <div>(310) 666 1111</div>
+          <div>(402) 293-2000</div>
+        </div>
+        <br /><br />
+        <div class="content-wrapper">
+          <div>
+            <div>1000 Galvin Rd S</div>
+            <div>Bellevue, NE 68005</div>
+          </div>
         </div>
       </div>
     </div>
