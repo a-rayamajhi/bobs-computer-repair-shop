@@ -1,6 +1,6 @@
 // Hero banner
 .hero-banner {
-  height: 70vh;
+  height: calc(100vh - 565px);
   width: 100%;
   background: linear-gradient(rgba(22, 22, 22, 0.5), #212121),
     url(../../assets/hero.png);
