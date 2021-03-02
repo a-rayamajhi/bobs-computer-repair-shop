@@ -1,3 +1,11 @@
+/**
+ * Title: app.component.spec.ts
+ * Author: Professor Krasso
+ * Date: 1 Mar 2021
+ * Modified By:  Anil Rayamajhi
+ * Description: Test App content and properties
+ */
+
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
@@ -5,12 +13,8 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -20,16 +24,15 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'in-n-out-booksp1'`, () => {
+  it(`should have as title "BOB's Computers"'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('in-n-out-booksp1');
+    expect(app.appName).toEqual("BOB's Computers");
   });
 
-  it('should render title', () => {
+  it(`should have as array of services`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('in-n-out-booksp1 app is running!');
+    const app = fixture.componentInstance;
+    expect(app.services).toBeTruthy();
   });
 });
